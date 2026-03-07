@@ -1,3 +1,5 @@
+/*Anthony Denney | 06/03/2026*/
+
 body {
 	background: url("images/background.jpg") no-repeat center fixed;
 	font-family: Arial, Helventica, sans-serif;
@@ -76,4 +78,5 @@ footer {
 	box-shadow: 20px 20px 10px grey;
 	margin: 20px auto;
 	max-width: 600px;
+
 }
