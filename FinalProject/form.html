@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+	<!--Anthony Denney | 25/04/2026 | forms page for reporting errors for FinalProject-->
+	
+	<title>Error Report</title>
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header>
+	
+			<h1>Why I Play</h1>
+			<img src="images/tomologo.svg" alt="Tomodachi Life: Living The Dream">
+			<h1>And You Should Too!</h1>
+		
+			<nav>
+		
+				<ul id="nav">
+			
+					<li><a href="home.html">About Page</a></li>
+					<li><a href="details.html">Top 10 Reasons</a></li>
+					<li><a href="form.html">Error Report</a></li>
+					<li><a href="credits.html">Credits Page</a></li>
+				
+				</ul>
+			
+			</nav>
+		
+		</header>
+	
+		<main>
+		
+			<section class="intro">
+	
+				<h2>Am I Wrong? Let Me Know!</h2>
+		
+				<p>If you would like to correct a piece of information that I wrote about Tomodachi Life: Living The Dream, let me know so I can fix it!</p>
+				
+			</section>
+	
+			<form action="https://webdevbasics.net/scripts/demo.php" method="post">
+			
+				<h3>Error Report</h3>
+			
+				<h4>Basic Info</h4>
+
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="fullname" required><br>
+		
+				<label for="date">Date:</label>
+				<input type="date" id="date" required><br>
+			
+				<label for="type">Type:</label>
+				<select id="type" name="topic">
+	
+					<option value="general">Misinformation</option>
+					<option value="support">Outdated Info</option>
+					<option value="feedback">Mispelling/Bad Grammar</option>
+		
+				</select><br>
+				
+				<h4>Where Is The Error?</h4>
+		
+				<label for="radio">About Page</label>
+				<input type="radio" id="radio" name="page"><br>
+			
+				<label for="radio2">Top 10 Reasons</label>
+				<input type="radio" id="radio2" name="page"><br>
+				
+				<label for="radio3">Credits Page</label>
+				<input type="radio" id="radio3" name="page"><br>
+				
+				<h4>How Can We Contact You?</h4>
+			
+				<label for="check">Phone Number</label>
+				<input type="checkbox" id="check" name="contact"><br>
+			
+				<label for="check2">Email</label>
+				<input type="checkbox" id="check2" name="contact"><br>
+			
+				<label for="check3">Other</label>
+				<input type="checkbox" id="check3" name="contact"><br>
+				
+				<h4>Other</h4>
+	
+				<label for="message">Describe The Error and Give Contact info:</label><br>
+				<textarea id="message" required name="message"></textarea><br>
+	
+				<input type="submit" value="Submit Answers">
+				<input type="reset" value="Reset Answers">
+	
+			</form>
+			
+			<section class="con">
+	
+				<h2>Want to Show Off Your Island? Send It Here!</h2>
+	
+				<p>If you want to show off your island, funny moments, cute moments, Mii designs, other designs, or anything else you can think of, you can send them to us here!</p>
+	
+				<p>Email:<a href="mailto:adenney@tomolife.com">adenney@tomolife.com</a></p>
+				
+				<img src="images/island.jpg" alt="My Tomodachi Life Island">
+				
+			</section>
+	
+		</main>
+
+		<footer>
+	
+			<p>Written & Coded By Anthony Denney</p>
+			<p><a href="../index.html">Back to Web110 Assignments</a></p>
+	
+		</footer>
+		
+	</div>
+
+</body>

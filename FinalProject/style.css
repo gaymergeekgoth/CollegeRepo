@@ -1,0 +1,267 @@
+/*Anthony Denney | 25/04/2026 | css stylesheet for FinalProject*/
+
+body {
+	background: url("images/tomolifebg.jpg") no-repeat center fixed;
+	text-align: center;
+	
+}
+
+/*I am a very particular person with very exact measurements. you will see a lot of exact and potentially weird looking measurements in the code, but I think these measurements look the best on the site itself*/
+
+/*on top of that, there are a few measurements that look EXTRA big and specific. this is because I originally used px and then used a px-to-em converter since we can't use px measurements over 10px*/
+
+/*these measurements are also not always very consistent because I noticed that some elements react differently to different measurements*/
+
+/*wrapper class just contains all content*/
+
+.wrapper {
+	font-family: Arial, sans-serif;
+	margin: auto auto;
+	max-width: 73.125em;
+	width: 70%;
+}
+
+header {
+	background-color: #FFF5CC;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+header img {
+	width: 15.625em;
+}
+
+nav {
+	background-color: #FFEC00;
+	border: 3px solid #AA6417;
+	border-radius: 10px;
+	font-weight: bold;
+	margin: auto;
+	max-width: 27.1875em;
+	padding: 1px;
+	width: 60%;
+}
+
+/*nav id is for the navigation. so that I can style this ul separately from similar elements outside of it*/
+
+#nav { 
+	list-style: none;
+	padding-left: 0;
+	
+}
+
+#nav li {
+	display: inline;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #A40642;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #00BC49;
+	text-decoration: underline;
+}
+
+a {
+	color:#A40642;
+}
+
+a:hover {
+	color: #FF0644;
+}
+
+main img {
+	max-width: 65em;
+	margin: auto;
+	padding: 10px;
+	width: 90%
+}
+
+/*intro is short for introduction. this class is for "intro" sections that I can edit by themselves. what is short for "what is it about", it was originally for a specific section of the site but it became useful for another section as well*/
+
+.intro {
+	background-color: #FFE06E;
+	border-radius: 10px;
+	margin: 1em auto;
+	padding: 1em;
+}
+
+.what {
+	background-color: #FFF5CC;
+	border-radius: 10px;
+	margin: 1em auto;
+	padding: 1em;
+}
+
+h1, h2, h3, h4 {
+	color: #005120;
+}
+
+p {
+	color: #01712E;
+}
+
+small {
+	color: #01712E;
+}
+
+ol {
+	list-style-position: inside;
+	padding-left: 0;
+	text-align: left;
+}
+
+ol h3 {
+	display: inline;
+}
+
+ol li {
+	background-color: #FFF5CC;
+	border-radius: 10px;
+	margin: 1em auto;
+	padding: 1em;
+}
+
+ol li img {
+		display: flex;
+		justify-content: center;
+}
+
+ol ul li {
+	color: #01712E;
+}
+
+form {
+	background-color: #FFF5CC;
+	border-radius: 10px;
+	margin: 1em auto;
+	padding: 1em;
+}
+
+form h3 {
+	text-decoration: underline;
+}
+
+label {
+	color: #01712E;
+}
+
+input {
+	margin: 5px;
+}
+
+/*con is short for "conclusion". basically the last sections (other than the footer). this was so i can edit these sections by themselves without interuptting any other similar elements outside of them*/
+
+.con {
+	background-color: #FFE06E;
+	border-radius: 10px;
+	margin: 1em auto;
+	padding: 1em;
+}
+
+footer {
+	background-color: #FFEC00;
+	border: 3px solid #AA6417;
+	border-radius:10px;
+	margin: auto;
+	max-width: 20.3125em;
+	padding: 5px;
+	width: 50%;
+}
+
+/*I added a third media query for 1200px because two other ones were not enough. the site looked weird for measurements between 768px-1200px and it was heavily bothering me lol*/
+
+@media ( max-width: 1200px ) {
+	
+	.wrapper {
+		width: 80%;
+	}
+	
+	nav {
+		width: 70%;
+	}
+	
+}
+
+@media ( max-width: 768px ) {
+	
+	.wrapper {
+		margin: auto auto;
+	}
+	
+	header {
+		padding: 10px;
+	}
+	
+	nav {
+		margin: auto;
+		padding: 1px;
+		width: 80%;
+	}
+	
+	.intro {
+		margin: 1em auto;
+		padding: 5px;
+	}
+	
+	.what {
+		margin: 1em auto;
+		padding: 5px;
+	}
+	
+	ol li {
+		margin: 1em auto;
+		padding: 8px;
+	}
+	
+	form {
+		margin: 1em auto;
+		padding: 1em;
+	}
+	
+	.con {
+		margin: 1em auto;
+		padding: 5px;
+	}
+	
+	footer {
+		margin: auto;
+		padding: 5px;
+		width: 70%;
+	}
+	
+}
+
+@media ( max-width: 480px ) {
+	
+	.wrapper {
+		width: 90%;
+	}
+	
+	header img {
+		width: 12.5em;
+	}
+	
+	.intro {
+		padding: 8px;
+	}
+	
+	.what {
+		padding: 8px;
+	}
+	
+	ol li {
+		padding: 10px;
+	}
+	
+	.con {
+		padding: 8px;
+	}
+	
+	
+	
+	
+}
